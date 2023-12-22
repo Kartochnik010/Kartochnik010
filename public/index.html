@@ -1,12 +1,4 @@
-package handler
-
-import (
-	"fmt"
-	"net/http"
-)
-
-func Index(w http.ResponseWriter, r *http.Request) {
-	f := `<!DOCTYPE html>
+<!DOCTYPE html>
 	<html lang="en">
 	<head>
 		<meta charset="UTF-8">
@@ -99,6 +91,4 @@ func Index(w http.ResponseWriter, r *http.Request) {
 			<p>Github: <a href="https://github.com/Kartochnik010">github.com/Kartochnik010</a></p>
 		</section>
 	</body>
-	</html>`
-	fmt.Fprint(w, f)
-}
+	</html>
